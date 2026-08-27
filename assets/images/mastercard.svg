@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 48" role="img" aria-labelledby="title">
+<title>Mastercard</title>
+<rect x=".75" y=".75" width="90.5" height="46.5" rx="9.25" fill="#fff" stroke="#d8e5dc" stroke-width="1.5"/>
+<circle cx="39" cy="24" r="13" fill="#EB001B"/>
+<circle cx="53" cy="24" r="13" fill="#F79E1B"/>
+<path d="M46 13.15a13 13 0 0 1 0 21.7 13 13 0 0 1 0-21.7Z" fill="#FF5F00"/>
+</svg>

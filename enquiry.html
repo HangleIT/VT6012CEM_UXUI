@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newport Circuit | Enquiry</title>
+  <meta name="description" content="Contact Newport Circuit with a cinema or booking enquiry.">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/enquiry.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container">
+    <a class="brand" href="index.html" aria-label="Newport Circuit Home">
+      <img class="brand-logo" src="assets/images/newport-logo.png" alt="Newport Circuit logo">
+      <div class="brand-text"><span class="brand-name-zh">新寶院線</span><span class="brand-name-en">Newport Circuit</span></div>
+    </a>
+    <nav class="main-navigation" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link">Theatres</a>
+      <a class="nav-link" href="index.html#now-showing">Now Showing</a>
+      <a class="nav-link">Coming Soon</a>
+      <a class="nav-link nav-link-primary" href="booking-history.html">Booking History</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" id="about-toggle" type="button" aria-expanded="false" aria-controls="about-menu"><span>About Us</span><span class="dropdown-arrow" aria-hidden="true"></span></button>
+        <div class="nav-dropdown-menu" id="about-menu" hidden><a>About Us</a><a href="faq.html">FAQ</a><a href="enquiry.html" aria-current="page">Enquiry</a></div>
+      </div>
+      <a class="facebook-link" href="https://www.facebook.com/pages/%E6%96%B0%E5%AF%B6%E9%99%A2%E7%B7%9A-Newport-Circuit/109670132383508" aria-label="Newport Circuit Facebook"><span class="facebook-icon" aria-hidden="true">f</span><span>Facebook</span></a>
+      <button class="language-button" type="button" id="language-button" aria-label="Switch language">中文</button>
+    </nav>
+    <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main class="enquiry-page-main">
+  <div class="page-container enquiry-page-container">
+    <section class="enquiry-heading" aria-labelledby="enquiry-heading">
+      <p class="enquiry-kicker">Customer support</p>
+      <h1 id="enquiry-heading">Enquiry</h1>
+      <p>Please fill in your enquiry. We will reply to you as soon as possible.</p>
+    </section>
+
+    <section class="enquiry-form-card" aria-label="Enquiry form">
+      <form id="enquiry-form" novalidate>
+        <div class="enquiry-field-grid">
+          <div class="enquiry-field">
+            <label for="enquiry-name">Name <span aria-hidden="true">*</span></label>
+            <input id="enquiry-name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="enquiry-field">
+            <label for="enquiry-email">Email <span aria-hidden="true">*</span></label>
+            <input id="enquiry-email" name="email" type="email" autocomplete="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="enquiry-field">
+            <label for="enquiry-phone">Phone Number <span aria-hidden="true">*</span></label>
+            <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" placeholder="Enter your phone number" required>
+          </div>
+        </div>
+
+        <div class="enquiry-field enquiry-content-field">
+          <label for="enquiry-content">Content <span aria-hidden="true">*</span></label>
+          <textarea id="enquiry-content" name="content" rows="6" placeholder="Tell us how we can help" required></textarea>
+          <p class="enquiry-field-help">Please include any relevant cinema, movie or booking details.</p>
+        </div>
+
+        <div class="enquiry-bottom-row">
+          <div class="enquiry-field enquiry-captcha-input-field">
+            <label for="enquiry-captcha">Verification code <span aria-hidden="true">*</span></label>
+            <input id="enquiry-captcha" name="captcha" type="text" autocomplete="off" placeholder="Enter the code shown" required>
+          </div>
+
+          <div class="enquiry-captcha-control">
+            <div class="enquiry-captcha-image-wrap" aria-label="Verification code image">
+              <canvas
+                id="enquiry-captcha-canvas"
+                class="enquiry-captcha-canvas"
+                width="220"
+                height="64"
+                aria-label="Verification code image"
+              ></canvas>
+            </div>
+
+            <button
+              class="enquiry-captcha-refresh"
+              id="enquiry-captcha-refresh"
+              type="button"
+              aria-label="Refresh verification code"
+              title="Refresh code"
+            >
+              <span aria-hidden="true">↻</span>
+              <span>Refresh</span>
+            </button>
+          </div>
+
+          <div class="enquiry-form-actions">
+            <button class="primary-button enquiry-submit-button" type="submit">Submit enquiry</button>
+            <button class="enquiry-clear-button" type="reset">Clear</button>
+          </div>
+        </div>
+
+        <div id="enquiry-feedback" class="enquiry-feedback" role="status" aria-live="polite" hidden></div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer"><div class="footer-container"><div class="footer-brand"><img src="assets/images/newport-logo.png" alt="" class="footer-logo"><div><strong>新寶院線</strong><span>Newport Circuit</span></div></div><div class="footer-column"><h2>Movies</h2><a href="index.html">Home</a><a href="index.html#now-showing">Now Showing</a><a>Coming Soon</a></div><div class="footer-column"><h2>Theatres</h2><a>Hyland (TM)</a></div><div class="footer-column"><h2>Support</h2><a href="faq.html">FAQ</a><a href="enquiry.html">Enquiry</a><a>Privacy Policy</a><a>Terms &amp; Conditions</a></div><div class="footer-column"><h2>About</h2><a>About Us</a><a href="booking-history.html">Booking History</a></div><div class="footer-column footer-connect"><h2>Connect</h2><a href="https://www.facebook.com/pages/%E6%96%B0%E5%AF%B6%E9%99%A2%E7%B7%9A-Newport-Circuit/109670132383508"><span class="facebook-icon" aria-hidden="true">f</span>Facebook</a></div></div><div class="footer-bottom"><p>Copyright ©2026 Newport Entertainment Co. Ltd All Rights Reserved 版權所有 不得轉載</p></div></footer>
+<script src="js/common.js"></script>
+<script src="js/enquiry.js"></script>
+</body>
+</html>

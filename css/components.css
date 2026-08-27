@@ -1,0 +1,41 @@
+/* ============================================================
+   NEWPORT CIRCUIT — SHARED UI COMPONENTS
+   Reusable headings and primary action buttons
+============================================================ */
+
+.section-title {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+}
+
+.primary-button {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border-radius: 11px;
+  color: #fff;
+  background: var(--green);
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+
+.primary-button:hover {
+  background: var(--green-hover);
+}
+
+.primary-button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 760px) {
+  .section-title {
+    font-size: 27px;
+  }
+}

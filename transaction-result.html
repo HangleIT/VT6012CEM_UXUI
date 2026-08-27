@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newport Circuit | Transaction Result</title>
+  <meta name="description" content="Booking confirmation for the completed Newport Circuit transaction.">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/booking-flow.css">
+</head>
+<body data-booking-step="transaction-result">
+<header class="site-header">
+  <div class="header-container">
+    <a class="brand" href="index.html" aria-label="Newport Circuit Home">
+      <img class="brand-logo" src="assets/images/newport-logo.png" alt="Newport Circuit logo">
+      <div class="brand-text"><span class="brand-name-zh">新寶院線</span><span class="brand-name-en">Newport Circuit</span></div>
+    </a>
+    <nav class="main-navigation" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link">Theatres</a>
+      <a class="nav-link" href="index.html#now-showing">Now Showing</a>
+      <a class="nav-link">Coming Soon</a>
+      <a class="nav-link nav-link-primary" href="booking-history.html">Booking History</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" id="about-toggle" type="button" aria-expanded="false" aria-controls="about-menu"><span>About Us</span><span class="dropdown-arrow" aria-hidden="true"></span></button>
+        <div class="nav-dropdown-menu" id="about-menu" hidden><a>About Us</a><a href="faq.html">FAQ</a><a href="enquiry.html">Enquiry</a></div>
+      </div>
+      <a class="facebook-link" href="https://www.facebook.com/pages/%E6%96%B0%E5%AF%B6%E9%99%A2%E7%B7%9A-Newport-Circuit/109670132383508" aria-label="Newport Circuit Facebook"><span class="facebook-icon" aria-hidden="true">f</span><span>Facebook</span></a>
+      <button class="language-button" type="button" id="language-button" aria-label="Switch language">中文</button>
+    </nav>
+    <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main class="flow-page-main">
+  <div class="page-container booking-flow-container">
+    <nav class="flow-progress" aria-label="Booking progress">
+  <span class="flow-progress-step completed">Seat Plan</span>
+  <span class="flow-progress-step completed">Ticket Type</span>
+  <span class="flow-progress-step completed">Confirm Payment Info</span>
+  <span class="flow-progress-step completed">Verification</span>
+  <span class="flow-progress-step current">Transaction Result</span>
+</nav>
+    <section class="flow-card result-card" aria-labelledby="result-heading">
+      <div class="result-check" aria-hidden="true">✓</div>
+      <h1 id="result-heading">Booking successful</h1>
+      <p class="result-lead">Your booking has been confirmed. You can view it in Booking History or return to the home page to book another movie.</p>
+      <div class="result-reference"><span>Booking reference</span><strong id="result-reference">—</strong></div>
+      <div class="result-summary" id="result-summary"></div>
+      <div class="result-actions">
+        <a class="flow-primary-button" href="booking-history.html">View Booking History</a>
+        <a class="flow-secondary-button" id="book-another-movie" href="index.html">Book another movie</a>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand"><img src="assets/images/newport-logo.png" alt="" class="footer-logo"><div><strong>新寶院線</strong><span>Newport Circuit</span></div></div>
+    <div class="footer-column"><h2>Movies</h2><a href="index.html">Home</a><a href="index.html#now-showing">Now Showing</a><a>Coming Soon</a></div>
+    <div class="footer-column"><h2>Theatres</h2><a>Hyland (TM)</a></div>
+    <div class="footer-column"><h2>Support</h2><a href="faq.html">FAQ</a><a href="enquiry.html">Enquiry</a><a>Privacy Policy</a><a>Terms &amp; Conditions</a></div>
+    <div class="footer-column"><h2>About</h2><a>About Us</a><a href="booking-history.html">Booking History</a></div>
+    <div class="footer-column footer-connect"><h2>Connect</h2><a href="https://www.facebook.com/pages/%E6%96%B0%E5%AF%B6%E9%99%A2%E7%B7%9A-Newport-Circuit/109670132383508"><span class="facebook-icon" aria-hidden="true">f</span>Facebook</a></div>
+  </div>
+  <div class="footer-bottom"><p>Copyright ©2026 Newport Entertainment Co. Ltd All Rights Reserved 版權所有 不得轉載</p></div>
+</footer>
+<script src="js/common.js"></script>
+<script src="js/booking-flow.js"></script>
+</body>
+</html>

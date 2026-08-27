@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newport Circuit | Home</title>
+  <meta name="description" content="Newport Circuit cinema website for movie discovery and online ticket booking.">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container">
+    <a class="brand" href="index.html" aria-label="Newport Circuit Home">
+      <img class="brand-logo" src="assets/images/newport-logo.png" alt="Newport Circuit logo">
+      <div class="brand-text"><span class="brand-name-zh">新寶院線</span><span class="brand-name-en">Newport Circuit</span></div>
+    </a>
+    <nav class="main-navigation" aria-label="Main navigation">
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link">Theatres</a>
+      <a class="nav-link" href="#now-showing">Now Showing</a>
+      <a class="nav-link">Coming Soon</a>
+      <a class="nav-link nav-link-primary" href="booking-history.html">Booking History</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" id="about-toggle" type="button" aria-expanded="false" aria-controls="about-menu"><span>About Us</span><span class="dropdown-arrow" aria-hidden="true"></span></button>
+        <div class="nav-dropdown-menu" id="about-menu" hidden><a>About Us</a><a href="faq.html">FAQ</a><a href="enquiry.html">Enquiry</a></div>
+      </div>
+      <a class="facebook-link" href="https://www.facebook.com/pages/%E6%96%B0%E5%AF%B6%E9%99%A2%E7%B7%9A-Newport-Circuit/109670132383508" aria-label="Newport Circuit Facebook"><span class="facebook-icon" aria-hidden="true">f</span><span>Facebook</span></a>
+      <button class="language-button" type="button" id="language-button" aria-label="Switch language">中文</button>
+    </nav>
+    <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+  <section class="hero-section" aria-label="Featured movie">
+    <div class="hero-artwork-panel" aria-hidden="true">
+      <img class="hero-composite-image" src="assets/images/hero-composite.jpg" alt="">
+    </div>
+
+    <div class="hero-video-panel">
+      <iframe
+        class="hero-video-player"
+        src="https://www.youtube.com/embed/Yf8GAos438I?autoplay=1&mute=1&rel=0&playsinline=1"
+        title="Evil Dead Burn official trailer"
+        loading="eager"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <a class="hero-video-fallback" href="https://youtu.be/Yf8GAos438I" target="_blank" rel="noopener noreferrer">Open trailer on YouTube</a>
+    </div>
+  </section>
+
+  <section class="showtime-search-section" id="showtimes" aria-labelledby="showtime-heading">
+    <div class="page-container">
+      <h1 class="section-title" id="showtime-heading">Find Showtimes</h1>
+      <div class="showtime-search-panel">
+        <div class="filter-grid">
+          <div class="filter-group cinema-filter"><label for="cinema-select">Cinema</label><select id="cinema-select"><option selected>Hyland (TM)</option></select></div>
+          <div class="filter-group movie-search-filter"><label for="movie-search">Search movie</label><div class="search-input-wrapper"><span class="search-icon" aria-hidden="true"></span><input id="movie-search" type="search" placeholder="Search movie name, e.g. UFO" autocomplete="off"></div></div>
+          <fieldset class="filter-group language-filter"><legend>Language</legend><div class="segmented-control"><button class="filter-button active" type="button" data-language="all">All</button><button class="filter-button" type="button" data-language="chi">Chi</button><button class="filter-button" type="button" data-language="eng">Eng</button></div></fieldset>
+          <fieldset class="filter-group time-filter"><legend>Time</legend><div class="segmented-control time-options"><button class="filter-button active" type="button" data-time="any">Any</button><button class="filter-button" type="button" data-time="morning">Morning</button><button class="filter-button" type="button" data-time="evening">Evening</button></div></fieldset>
+        </div>
+        <div class="date-filter-row"><span class="date-label">Date</span><div class="date-options" role="group" aria-label="Select screening date">
+          <button class="date-button active" type="button" data-date="any">Any date</button>
+          <button class="date-button first-available" type="button" data-date="2026-07-04"><strong>4 Jul</strong><span>FIRST AVAILABLE</span></button>
+          <button class="date-button" type="button" data-date="2026-07-05"><strong>5 Jul</strong><span>Sun</span></button>
+          <button class="date-button" type="button" data-date="2026-07-06"><strong>6 Jul</strong><span>Mon</span></button>
+          <button class="date-button" type="button" data-date="2026-07-07"><strong>7 Jul</strong><span>Tue</span></button>
+          <button class="date-button" type="button" data-date="2026-07-08"><strong>8 Jul</strong><span>Wed</span></button>
+          <button class="date-button" type="button" data-date="2026-07-09"><strong>9 Jul</strong><span>Thu</span></button>
+          <button class="date-button" type="button" data-date="2026-07-10"><strong>10 Jul</strong><span>Fri</span></button>
+        </div><button class="primary-button find-showtimes-button" id="find-showtimes-button" type="button">Find showtimes</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="now-showing-section" id="now-showing" aria-labelledby="now-showing-heading">
+    <div class="page-container">
+      <div class="section-heading"><h2 class="section-title" id="now-showing-heading">Now showing at Hyland (TM)</h2><p id="movie-count">Movies available</p></div>
+      <div class="search-feedback" id="search-feedback" aria-live="polite"></div>
+      <div class="movie-list" id="movie-list">
+        <article class="movie-card" data-movie="unidentified murder" data-movie-id="ufo" data-title="Unidentified Murder" data-poster="assets/images/movie-ufo.png" data-house="House 3" data-language="chi" data-language-label="Cantonese (Chinese Subtitles)" data-default-date="2026-07-04"><div class="movie-summary"><img class="movie-thumbnail" src="assets/images/movie-ufo.png" alt="Unidentified Murder poster"><div class="movie-information"><h3>Unidentified Murder</h3><div class="movie-tags"><span class="movie-tag">Chi</span><span class="movie-tag first-available-tag">First available</span></div><p>Hyland Theatre · House 3 · From HK$40</p></div></div><div class="movie-showtimes"><span class="showtime-label">Showtimes</span><div class="showtime-buttons"><button class="showtime-button" type="button" data-time="11:30 AM">11:30 AM</button><button class="showtime-button" type="button" data-time="8:30 PM">8:30 PM</button></div></div><div class="movie-action"><a class="primary-button book-button" href="seat-selection.html" aria-label="Book selected showtime">Book now</a></div></article>
+        <article class="movie-card" data-movie="minions monsters" data-movie-id="minions" data-title="Minions &amp; Monsters (Chi)" data-poster="assets/images/movie-minions.png" data-house="House 2" data-language="chi" data-language-label="Cantonese (Chinese Subtitles)" data-default-date="2026-07-04"><div class="movie-summary"><img class="movie-thumbnail" src="assets/images/movie-minions.png" alt="Minions and Monsters poster"><div class="movie-information"><h3>Minions &amp; Monsters (Chi)</h3><div class="movie-tags"><span class="movie-tag">Chi</span></div><p>Hyland Theatre · Multiple houses · Family animation</p></div></div><div class="movie-showtimes"><span class="showtime-label">Showtimes</span><div class="showtime-buttons"><button class="showtime-button" type="button" data-time="10:55 AM">10:55 AM</button><button class="showtime-button" type="button" data-time="12:40 PM">12:40 PM</button><button class="showtime-button" type="button" data-time="2:25 PM">2:25 PM</button><button class="showtime-button" type="button" data-time="4:10 PM">4:10 PM</button><button class="showtime-button" type="button" data-time="5:55 PM">5:55 PM</button><button class="showtime-button" type="button" data-time="7:45 PM">7:45 PM</button><button class="showtime-button important-showtime" type="button" data-time="9:30 PM" data-date="2026-07-09">9:30 PM</button></div></div><div class="movie-action"><a class="primary-button book-button" href="seat-selection.html" aria-label="Book selected showtime">Book now</a></div></article>
+        <article class="movie-card" data-movie="toy story 5" data-movie-id="toy-story-5" data-title="Toy Story 5 (Chi)" data-poster="assets/images/movie-toy-story-5.png" data-house="House 1" data-language="chi" data-language-label="Cantonese (Chinese Subtitles)" data-default-date="2026-07-04"><div class="movie-summary"><img class="movie-thumbnail" src="assets/images/movie-toy-story-5.png" alt="Toy Story 5 poster"><div class="movie-information"><h3>Toy Story 5 (Chi)</h3><div class="movie-tags"><span class="movie-tag">Chi</span></div><p>Hyland Theatre · Family movie · 8 showtimes</p></div></div><div class="movie-showtimes"><span class="showtime-label">Showtimes</span><div class="showtime-buttons"><button class="showtime-button" type="button" data-time="10:50 AM">10:50 AM</button><button class="showtime-button" type="button" data-time="12:35 PM">12:35 PM</button><button class="showtime-button" type="button" data-time="2:20 PM">2:20 PM</button><div class="extra-showtimes" id="toy-story-extra-showtimes" hidden><button class="showtime-button" type="button" data-time="4:05 PM">4:05 PM</button><button class="showtime-button" type="button" data-time="5:50 PM">5:50 PM</button><button class="showtime-button" type="button" data-time="7:10 PM">7:10 PM</button><button class="showtime-button" type="button" data-time="8:40 PM">8:40 PM</button><button class="showtime-button" type="button" data-time="10:00 PM">10:00 PM</button></div><button class="more-showtimes-button" id="toy-story-more-button" type="button" aria-expanded="false" aria-controls="toy-story-extra-showtimes">+5 more</button></div></div><div class="movie-action"><a class="primary-button book-button" href="seat-selection.html" aria-label="Book selected showtime">Book now</a></div></article>
+      </div>
+    </div>
+  </section>
+  <section id="theatres" hidden></section><section id="coming-soon" hidden></section><section id="about-us" hidden></section><section id="enquiry" hidden></section>
+</main>
+<footer class="site-footer"><div class="footer-container"><div class="footer-brand"><img src="assets/images/newport-logo.png" alt="" class="footer-logo"><div><strong>新寶院線</strong><span>Newport Circuit</span></div></div><div class="footer-column"><h2>Movies</h2><a href="index.html">Home</a><a href="#now-showing">Now Showing</a><a>Coming Soon</a></div><div class="footer-column"><h2>Theatres</h2><a>Hyland (TM)</a></div><div class="footer-column"><h2>Support</h2><a href="faq.html">FAQ</a><a href="enquiry.html">Enquiry</a><a>Privacy Policy</a><a>Terms &amp; Conditions</a></div><div class="footer-column"><h2>About</h2><a>About Us</a><a href="booking-history.html">Booking History</a></div><div class="footer-column footer-connect"><h2>Connect</h2><a href="https://www.facebook.com/pages/%E6%96%B0%E5%AF%B6%E9%99%A2%E7%B7%9A-Newport-Circuit/109670132383508"><span class="facebook-icon" aria-hidden="true">f</span>Facebook</a></div></div><div class="footer-bottom"><p>Copyright ©2026 Newport Entertainment Co. Ltd All Rights Reserved 版權所有 不得轉載</p></div></footer>
+<script src="js/common.js"></script><script src="js/home.js"></script>
+</body></html>
